@@ -8,6 +8,7 @@ let proximoId = 1;
 
 const statusValidos = ['pendente', 'pronto', 'cancelado'];
 
+ // Resposta 204 não deve ter corpo nem cabeçalho JSON.
 function enviarResposta(res, statusCode, dados = null) {
     if (statusCode === 204) {
         res.writeHead(204);
