@@ -9,18 +9,18 @@ let proximoId = 1;
 const statusValidos = ['pendente', 'pronto', 'cancelado'];
 
 function enviarResposta(res, statusCode, dados = null) {
-    res.writeHead(statusCode, {
-        'Content-Type': 'application/json; charset=utf-8'
-    });
-
     if (statusCode === 204) {
+        res.writeHead(204);
         res.end();
         return;
     }
 
+    res.writeHead(statusCode, {
+        'Content-Type': 'application/json; charset=utf-8'
+    });
+
     res.end(JSON.stringify(dados));
 }
-
 function lerCorpo(req) {
     return new Promise((resolve, reject) => {
         let corpo = '';
