@@ -2,7 +2,7 @@
 
 API REST em memória para gerenciamento de pedidos da cafeteria Dev Coffee, desenvolvida com o módulo HTTP nativo do Node.js, sem Express ou dependências externas.
 
-**Autor:** //Mateus Tenedini
+**Autor:** *Mateus Tenedini*
 
 ## Requisitos
 
