@@ -6,6 +6,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "[Seu nome completo]",
+  "author": "Mateus Tenedini",
   "license": "ISC"
 }
